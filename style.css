@@ -1,15 +1,20 @@
+/* Google Fonts */
 body {
     font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
 header {
     background-color: #4CAF50;
     color: white;
     padding: 10px;
+    text-align: center;
 }
 
 nav ul {
     list-style-type: none;
+    padding: 0;
 }
 
 nav ul li {
@@ -20,6 +25,7 @@ nav ul li {
 nav ul li a {
     color: white;
     text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
 }
 
 nav ul li a:hover {
@@ -28,12 +34,55 @@ nav ul li a:hover {
 }
 
 footer {
+    background-color: #333;
+    color: white;
     text-align: center;
     padding: 10px;
 }
 
-.content img,
-.product img {
-   width: 50%; 
-   height: auto;
+/* Home Page */
+.home-content {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.feature-item {
+    text-align: center;
+    margin: 10px;
+}
+
+/* Product Page */
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.product-item {
+    text-align: center;
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* Contact Form */
+.contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.contact-form img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.contact-form input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
 }
